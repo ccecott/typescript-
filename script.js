@@ -34,13 +34,13 @@ let inventory = [
     { product: { name: "sensor", price: 12.50 }, quantity: 4 },
     { product: { name: "LED", price: 1.00 }, quantity: 20 }
 ];
-let totalIn = 0;
 const calcInventoryValue = (inventory) => {
+    let totalIn = 0;
     inventory.forEach((item) => {
         totalIn += (item.product.price * item.quantity);
-        return totalIn;
     });
+    return totalIn;
 };
-calcInventoryValue(inventory);
-console.log(totalIn);
+let inventoryVal = calcInventoryValue(inventory);
+console.log(inventoryVal);
 // console.log("hi");

@@ -62,18 +62,19 @@ let inventory: InventoryItem[] = [
     { product: { name: "LED", price: 1.00 }, quantity: 20 }
 ]
 
-let totalIn: number = 0;
 
-const calcInventoryValue = (inventory: InventoryItem[]): void => {
+
+const calcInventoryValue = (inventory: InventoryItem[]): number => {
+    let totalIn = 0;
     inventory.forEach((item) => {
 
         totalIn += (item.product.price * item.quantity);
-        return totalIn;
-    });
 
+    });
+    return totalIn;
 }
-calcInventoryValue(inventory);
-console.log(totalIn);
+let inventoryVal = calcInventoryValue(inventory);
+console.log(inventoryVal);
 // console.log("hi");
 
 
