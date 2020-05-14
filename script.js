@@ -13,7 +13,8 @@ const findNameOfTallestMountain = (array) => {
     });
     return tallest.name;
 };
-console.log(findNameOfTallestMountain(mountains));
+let tallestM = findNameOfTallestMountain(mountains);
+console.log(tallestM);
 let products = [
     { name: "charlie", price: 0 },
     { name: "stick", price: 10 },
@@ -26,7 +27,8 @@ const calcAverageProductPrice = (products) => {
     }
     return total / products.length;
 };
-console.log(calcAverageProductPrice(products));
+let averagePrice = calcAverageProductPrice(products);
+console.log(averagePrice);
 let inventory = [
     { product: { name: "motor", price: 10.00 }, quantity: 10 },
     { product: { name: "sensor", price: 12.50 }, quantity: 4 },

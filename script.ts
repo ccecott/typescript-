@@ -20,7 +20,8 @@ const findNameOfTallestMountain = (array: Mountain[]): string => {
     });
     return tallest.name;
 }
-console.log(findNameOfTallestMountain(mountains));
+let tallestM = findNameOfTallestMountain(mountains);
+console.log(tallestM);
 
 //producr average
 
@@ -44,7 +45,8 @@ const calcAverageProductPrice = (products: Product[]): number => {
     }
     return total / products.length;
 }
-console.log(calcAverageProductPrice(products));
+let averagePrice = calcAverageProductPrice(products);
+console.log(averagePrice);
 
 
 //inventory
